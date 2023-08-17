@@ -1,0 +1,55 @@
+
+
+Computer:
+A computer is an elecrtonic  machine that is used to input, process and output data
+computer is consist of software and hardware
+software:operating systems, Microsoft office suite, paint, apps
+hardware: mouse, screen, printer
+-machine
+-input
+-output
+-code
+-data
+
+
+-binary code : 0 and 1 machine language what computer understands
+all the letters, digits,shapes and mor are onverted to  binary code to be understood and processed be computer
+
+Binary Units: 
+
+1=on
+2=off
+
+
+
+
+
+Bit:one  or zero
+Byte: 8 bits
+kilobyte: 1024 bits
+
+
+
+
+
+
+
+MAC: cmd -> command
+Windows: CTRL
+
+programming language - a vocabulary and set of grammatical rules for insrtucring a computer
+
+interpreted: JavaScript
+compiled language: lack ambiguity- confusion-conflict
+compilation - compile-compiler -> checking if your code is grammatically corrert
+execution-execute- executor    ->running the code 
+
+
+INSTALL node.js and check the version
+1. mac:open terminal and run "node -v"
+
+/*
+multi-line comment
+*/
+
+NOTE: it is recommended to put ; after every coding statement

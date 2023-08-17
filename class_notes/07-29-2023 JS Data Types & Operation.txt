@@ -1,0 +1,92 @@
+Data types: there are 2 types 
+1. primitives:
+
+   string: email. name. adress
+   we store srtings in double quotes,
+
+   numbers: age, prices, quantity...
+
+   BigInt: larger numbers
+   floating numbers: 10.5 whole: 10, 5 
+
+   boolean: true or false
+   null
+   undefined 
+   symbol
+
+credentials: username and password
+
+2. reference: complex - advanced
+    arrays, data strucrures - collecrions, objects and more
+
+
+== comparison
+=== - strict comparison
+
+undefined vs null
+undefined: it is a variable declared but not assigned with any value
+
+null: assigned with null (no information)
+
+
+JS OPERATORS: 
+= assignment OPERATOR
+shorthand assignment operators
++= 
+-=
+*= 
+/=
+%=
+arithmetic operators
+
++ sum or addition
+* multiplacation
+- substraction
+/ division
+% modulus / remainder
+** exponentiation 
+++ increment
+-- decrement
+
+comparison operators:
+
+== equals
+== strict equals
+!= not equals
+!== strict not equals
+> greater than
+< less than
+>= greater or equals
+<= les ot equals
+
+logical:
+
+&& and
+!  not
+|| or
+
+
+15 % 4 = 3   => 15 = 3 * 4 + 3
+
+INCREMENT & decrement
+
+COMPARISON OPERATORS
+== compare ONLY values
+=== compare both value and data types
+
+false -> 0
+true  -> 1
+null  -> 0 
+""    -> 0
+
+AND
+
+true  && true   -> true
+false && true  -> false
+false && false -> false
+
+OR  
+
+false ||       -> false
+true  || false -> true
+

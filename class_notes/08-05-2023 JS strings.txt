@@ -1,0 +1,14 @@
+
+indexOf() vs lastIndex()
+
+indexOf
+
+TASK: returns the position of first occurrence of a substring;
+RETURN: returns the position
+DT: number
+
+lastIndex()
+TASK: returns the position of last occurrence of a substring;
+RETURN: returns the position
+DT: number
+

@@ -1,0 +1,18 @@
+alt shift down arrom
+
+visual studoi code -  code editor commonly used for js
+IDE - Intergrated development enviroment
+
+VARIABLES -  Declaration vs assignment vs initialiazation
+let name; // Declaration - reserve memory for the name
+name = "John"; // assignment
+
++operator 
+when used between strings = concatenation
+Example: "hello" +"abc" -> helloabc
+         "123" +"12" - > 12312
+
+when used bt number = addition
+
+when used bt string and number = concatenation
+        

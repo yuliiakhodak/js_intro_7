@@ -1,0 +1,55 @@
+
+String is a sequence of characters stores in double or single quotes.
+
+{} - curly braces
+[] - brackets
+() - paranthese
+:  - colon
+^  - carat 
+~  - tilde
+
+primitive vs object data types
+
+primitive - basic -   less memory - faster
+NOTE: primitives have a limited capacity to store data.
+
+object    - complex - more memory - slower
+
+
+function = method = behavior
+
+mutual - can be changed
+immutable^ -  cannot me changed
+
+
+toLowerCase() - TASK: converts all uppercase letters to lowercases
+                Return: string back lowercased
+                DATA TYPE: string
+
+Property access with[]
+
+TASK: returns the characters at the given index
+RETURN : one character at the given index
+DATA TYPE: string
+
+charAt() function
+TASK: returns a characters at the spicified index if exists;
+RETURNS: one character at the given index
+DATA TYPE: string
+
+charCodeAt () function
+TASK: returns unicode representation of the character at the spicified index;
+RETURN: unicode representation 
+DATA TYPE: number
+
+search() function
+TASK: searches a string for a string (or a regular expression) and returns the position of the match.
+RETURN: the index of first match 
+DATA TYPE: number
+
+note: if doesnt exist you get -1
+
+includes()function
+TASK: searches  a string for a string and return true or false
+RETURN: true os false 
+DATA TYPE: boolean

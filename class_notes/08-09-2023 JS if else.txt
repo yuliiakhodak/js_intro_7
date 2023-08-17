@@ -1,0 +1,6 @@
+
+JS if else 
+
+- it works around a condition which is either or false
+- we can have if without any else part
+- we cannot use else without if

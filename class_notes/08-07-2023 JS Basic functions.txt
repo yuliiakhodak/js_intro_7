@@ -1,0 +1,3 @@
+
+Function - it is a block of code could be reused with a function name.
+
