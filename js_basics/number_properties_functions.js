@@ -53,3 +53,24 @@ console.log(Number.isInteger(25.5)); // false
 console.log(Number.isInteger("123")); // false
 console.log(Number.isInteger(Number("123"))); // true
 
+let num = Math.floor(Math.random() * 10 + 1);
+console.log(num%2 !== 0);
+
+let num1 = Math.floor(Math.random() * 10 + 1);
+let num2 = Math.floor(Math.random() * 10 + 1);
+let num3 = Math.floor(Math.random() * 10 + 1);
+console.log(num1, num2, num3);
+console.log(Math.max(num1, num2, num3));
+
+function concat(str1,str2){
+    return str1 + str2 
+    }
+console.log(!(5 ** (10 / 5) === 25 || 5 === "5" || 3 >= 5))
+
+/*
+Write a function named as firstLast() which takes a string word as an argument and returns the first and the last characters of the given word when invoked.
+NOTE: If the given word does not have 2 or more characters, then return the string back.
+*/
+function firstLast(str) {
+    return str[0] + str[str.length-1]
+}

@@ -206,19 +206,19 @@ function squarePerimeter(x){
  function firstLast(str){
     return str[0] + str[str.length-1]
  }
- console.log(firstLast("Tech"))
+ console.log(firstLast("1"))
 
  function hasFive(str){
-    return str.length === 5
+    return str.length >= 5
  }
- console.log(hasFive("Techfo"))
+ console.log(hasFive("Tecjho"))
 
  function middle(str){
     if (str.length % 2 === 0)
     return str.slice(str.length / 2 - 1, str.length / 2 + 1 );
-    else return str[Math.floor(str.length/2)]
+    else return str[(str.length-1)/2]
  }
- console.log(middle(" "))
+ console.log(middle("abc"))
 
  function longer(str1,str2){
     if (str1.length >= str2.length) return str1
@@ -248,7 +248,6 @@ function squarePerimeter(x){
         return true
     else return false   
  }
-
  console.log(startsVowel("Oech"))
 
 let num122 = Math.floor(Math.random()*11 - 5);
@@ -264,3 +263,54 @@ function hasFive(str){
   return str.length === 5 
 }
 console.log(hasFive("Tfch"))
+
+let text = "My name is name";
+console.log(text.search("name"))
+
+let mile1 = Math.floor(Math.random()* 10 + 1 );
+console.log(mile1 * 1.6)
+
+function shorter(str1,str2){
+   if (str1.length < str2.length) return str1
+   else return str2
+   }
+
+   console.log(shorter("Tecccch", "Global"))
+
+   /*
+   Write a function named as middle() which takes a string word as an argument and returns the middle 
+character if the string has odd length, and returns the middle two characters if the string has even 
+length when invoked. 
+NOTE: If the given word is empty, then return the empty string back. 
+ 
+Examples: 
+middle("Tech")    -> "ec" 
+middle("Global")   -> "ob" 
+middle("abcde")   -> "c" 
+middle("1")     -> "1" 
+middle("abc")     -> "b" 
+middle(“1234”)    -> "23" 
+ 
+*/
+ function middle(str){
+   if (str.length % 2 === 0) return str.slice(str.length/2-1, str.length);
+   else return str[Math.floor(str.length/2)]
+ }
+
+ console.log(middle("12345"))
+
+ let num = Math.floor(Math.random() * 100 + 1 );
+if (num <= 50) console.log("1st half")
+else console.log("2 half")
+
+
+function startsVowel(str){
+   if (str.toLowerCase().startsWith("a") ||
+  str.toLowerCase().startsWith("e") ||
+  str.toLowerCase().startsWith("o") ||
+  str.toLowerCase().startsWith("u") ||
+  str.toLowerCase().startsWith("i")) 
+  return true
+  else return false
+  }
+console.log(startsVowel("eyu"))  
