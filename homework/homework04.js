@@ -177,11 +177,11 @@ function getMultipleOf5(x,y){
 if (x < y) return array19;
 else return array19.reverse()
 }
-console.log(getMultipleOf5(2,4));
+console.log(getMultipleOf5(2,8));
 
 // Task 20
 let array20 = [];
-function fizzBuzz(x, y){
+function fizzBuzz1(x, y){
 let first = Math.min(x,y);
 let last = Math.max(x,y);
 for (i = first; i <= last; i++){
@@ -192,4 +192,4 @@ for (i = first; i <= last; i++){
 }
 return array20.join(" | ")
 }
-console.log(fizzBuzz(9,6));
+console.log(fizzBuzz1(9,6));
