@@ -127,7 +127,7 @@ function firstDuplicate(arr){
 console.log(firstDuplicate([ 3, 7, 0, 10,]))
 
 // Task 16 
-function getDublicates(arr){
+/*function getDublicates(arr){
     let duplicates = [];
     for (i = 0; i < arr.length; i++){
         first = arr[i];
@@ -139,6 +139,19 @@ function getDublicates(arr){
     return duplicates
 }
 console.log(getDublicates([ 0, -4, -7, 0, 5 , 10, 45, -7, 0 ]))
+*/
+function getDublicates(arr){
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        for(let j = i +1; j < arr.length; j++){
+            if(arr[i] === arr[j] && !newArr.includes(arr[i])) newArr.push(arr[i])
+        }
+    } 
+return newArr
+}
+console.log(getDublicates([ 0, -4, -7, 0, 5 , 10, 45, -7, 0 ]))
+
+
 
 // Task 17
 function reverseStringWords(str){

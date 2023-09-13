@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic 2 </title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        table, td, th{
+            border:2px solid black ;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th{
+            background-color: darkgray;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tr:hover{
+            opacity: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>First Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+                  <tr>
+                    <td>Doe</td>
+                    <td>John</td>
+                    <td>jdoe@yahoo.com</td>
+                  </tr>
+                  <tr>
+                    <td>Jones</td>
+                    <td>Alex</td>
+                    <td>alexjones@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Adam</td>
+                    <td>Smith</td>
+                    <td>adamsmith@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Adam</td>
+                    <td>Smith</td>
+                    <td>adamsmith@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Adam</td>
+                    <td>Smith</td>
+                    <td>adamsmith@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Adam</td>
+                    <td>Smith</td>
+                    <td>adamsmith@gmail.com</td>
+                  </tr>
+        </tbody>
+    </table>
+    <h1>Forms</h1>
+    <form action="#">
+       <p>
+        <label for="username">Username:</label>
+        <input type="username">
+    </p>
+    <p>
+        <label for="password">password:</label>
+        <input type="password">
+    </p>  
+    <p>
+    
+         <input type="text">
+    </p>
+    <p>
+        <label for="language">What language do you know?</label>
+        <br>
+        <label for="js">JS</label>
+        <input type="checkbox" name="" id="">
+        <label for="java">JAVA</label>
+        <input type="checkbox" name="" id="">
+    </p>
+    <p>
+        <label for="gender">Please select your gender</label>
+        <br>
+        <label for="female">
+          Female
+         <input  id="Female" type="radio" name="gender">
+        </label>
+        
+        <label for="Male">Male</label>
+        <input id="Male" type="radio" name="gender">
+        <label for="N/A">N/A</label>
+        <input type="radio" name="gender">
+    </p>
+    <label for="reference">Anything you want to share?</label>
+    <br>
+    <textarea name="" id="" cols="30" rows="10" placeholder="You can share all of your thoughts here!"></textarea>
+    <p>
+        <input type="submit">
+    </p>
+    <p>
+      <button>CLICK</button>
+    </p>
+
+    </form>
+    <form action="#">
+        <p>
+            <h1>Please select single radio</h1>
+            <p> 
+                <label for="Java">Java</label>
+                <input id="Java" type="radio" name="language">
+            
+            </p>
+            <p> <label for="C++">C++
+                <input id="C++" type="radio" name="language">
+            </label>
+            </p>
+        </p>
+        <p> <label for="JavaScript">JavaScript
+            <input id="JavaScript" type="radio" name="language">
+        </label>
+        </p>
+    </p>
+    </form>
+   <hr>
+   <h1>Dropdowns</h1>
+   <select name="color" style="padding: 5px; color: #e86666; background-color: rgb(181, 247, 247);">
+    <option value="color" disabled selected >Color</option>
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="black">black</option>
+   </select>
+    
+</body>
+</html>

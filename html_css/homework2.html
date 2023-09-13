@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        margin: 100px;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    table{
+        padding: 5px; ;
+    }
+    th{
+            background-color: rgba(240, 128, 128, 0.295)
+    }
+    tbody{
+        background-color: rgba(173, 216, 230, 0.603);
+    }
+
+    input,textarea,select {
+       width:800px;
+       height: 30px;
+       background-color: rgba(173, 216, 230, 0.447);
+      }
+      textarea{
+        height:100px;
+      }
+   </style>
+</head>
+<body>
+    <h1 style="color: red; font-size: 250%;">My Schedule</h1>
+    <table>
+        <thead >
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wendnesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>9:00 - 12:00</td>
+            <td>Study</td>
+            <td>Study</td>
+            <td>Study</td>
+            <td>Study</td>
+            <td>Study</td>
+            <td>Study</td>
+            <td>Study</td>
+    </tr>
+    <tr>
+        <td>12:00 - 14:00</td>
+        <td>LUNCH</td>
+        <td>LUNCH</td>
+        <td>LUNCH</td>
+        <td>LUNCH</td>
+        <td>LUNCH</td>
+        <td>LUNCH</td>
+        <td>LUNCH</td>
+    </tr>
+    <tr>
+        <td>14:00 - 21:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Hang out</td>
+        <td>Swim</td>
+        <td></td>
+    </tr>
+    </tbody>
+    </table>
+    <hr>
+    <h1>Application Form:</h1>
+    <form action="#">
+        <p>
+            <label for="First Name">First Name</label>
+            <br>
+            <input type="First Name" placeholder="First name">
+        </p>
+        <p>
+            <label for="Last Name">Last Name</label>
+            <br>
+            <input type="Last Name" placeholder="Last name">
+        </p>
+        <p>
+            <label for="email">email</label>
+            <br>
+            <input type="Email" placeholder="email">
+        </p>
+        <p>
+            <label for="Select Program">Select Program</label>
+            <br>
+            <select name="Select Program" id="">
+            <option value="Select Program" disabled>Select Program</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Software Engineer in Test">Software Engineer in Test</option>
+        
+        </select>
+        <p>
+            <label for="English Fluency Level">English Fluency Level</label>
+            <br>
+            <select name="English Fluency Level" id="">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advance">Advance</option>
+            <option value="Fluent">Fluent</option>
+        </select>
+        </p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Have any quetions? Please write it here..."></textarea>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+</body>
+</html>
