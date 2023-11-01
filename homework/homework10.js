@@ -50,14 +50,14 @@ console.log(isArmstrong(1634))
 console.log(isArmstrong(153))
 console.log(isArmstrong(1111))
 
-// Task 5  (don't really understand this)
+// Task 5  
 const reverseNumber = num => {
-    arr = []
+   let  revNum = 0
     while (num != 0) {
-        arr.push(num % 10)
+        revNum = revNum * 10 + num % 10
         num = Math.trunc(num / 10)
     }
-    return arr
+    return revNum
 }
 console.log(reverseNumber(371))
 // Task 6
@@ -78,3 +78,6 @@ console.log(splitString("Java", 2))
 console.log(splitString("Automation", 3))
 console.log(splitString("Hello", 6))
 console.log(splitString("12", 1))
+
+
+console.log(371 % 10)
