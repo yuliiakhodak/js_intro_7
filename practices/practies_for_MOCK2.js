@@ -26,8 +26,8 @@ console.log(hasVowel("Java"))
 
 // Task 4 ---- Start Vowel
 
-const startVowel = str => "aeiouAEIOU".includes(str.split("")[0]) ? true : false
-console.log(startVowel("ello"))
+const startVowel = str => "aeiouAEIOU".includes(str[0]) ? true : false
+console.log(startVowel("Hello"))
 
 // Task 5 ---Average of Edges
 
@@ -74,7 +74,7 @@ const swapFirstLastWord = str => {
 }
 
 
-console.log(swapFirstLastWord("Hello World"))
+console.log(swapFirstLastWord("Hello MYH World"))
 
 // Task 9
 
@@ -157,7 +157,7 @@ const FirstDublicate = arr => {
     return fDublicate;
 }
 
-console.log(FirstDublicate(['foo', 123, 'abc', '123', "bar"]));
+console.log(FirstDublicate(["foo", 123, 'abc', "foo", "bar"]));
 
 // Task 20
 
@@ -184,6 +184,9 @@ console.log(countVowes("Hello"))
 const reverseStringWords = str => str.trim().split(" ").map((word => word.split("").reverse().join(""))).join(" ")
 
 console.log(reverseStringWords("Hello World"))
+
+
+
 
 // Task 23
 
@@ -348,3 +351,158 @@ const sumOfDigits = str => {
 }
 
 console.log(sumOfDigits("John's age is 29"))
+
+
+const isPrime2 = num => {
+    if (num < 2) return false
+    if (num === 2 || num === 3) return true
+    if (num % 2 === 0) return false
+    for (let i = 5; i < Math.sqrt(num); i++) {
+        if (num % i === 0) return false
+    }
+    return true
+}
+
+console.log(isPrime2(6))
+
+const add3 = (arr1, arr2) => {
+    let biggerArr;
+    let smallerArr = []
+    if (arr2.length > arr1.length) biggerArr = arr2, smallerArr = arr1
+    else biggerArr = arr1, smallerArr = arr2
+    let addedArr = [];
+    for (i = 0; i < biggerArr.length; i++) {
+        if (smallerArr[i] === undefined) addedArr.push(biggerArr[i])
+        else addedArr.push(biggerArr[i] + smallerArr[i])
+    }
+    return addedArr
+}
+
+console.log(add3([3, 0, 0], [6, 3, 2, 5]))
+
+
+const arrFactorial = arr => {
+    const factorial = num => {
+        if (num === 0 || num === 1) return 1
+        else return num * factorial(num - 1)
+    }
+    return arr.map(num => factorial(num))
+}
+
+console.log(arrFactorial([1, 2, 3, 4]))
+
+const sumOfDigits3 = str => {
+    let numbers = str.split("").filter(x => (x >= 0 && x <= 9))
+    result = numbers.reduce((acc, curr) => acc += Number(curr), 0)
+    return result
+}
+
+console.log(sumOfDigits3("John's age is 29"))
+
+const palindrome = str => str.toLowerCase() === str.toLowerCase().split("").reverse().join("")
+
+console.log(palindrome(""))
+
+
+console.log("abc " ?? "2")
+
+
+const hasVowel2 = str => {
+    if (str.split("").some(x => "AaIiEeOoUu".includes(x))) return true
+    else return false
+}
+
+console.log(hasVowel2("Hll"))
+
+function getMultipleOf5(num1, num2) {
+    let multiplesOf5 = [];
+
+    for (let i = Math.max(num1, num2); i >= Math.min(num1, num2); i--) {
+        if (i % 5 === 0) {
+            multiplesOf5.push(i);
+        }
+    }
+
+    return multiplesOf5;
+}
+
+// Examples
+console.log(getMultipleOf5(3, 17)); // Output: [ 5, 10, 15]
+console.log(getMultipleOf5(23, 5)); // Output: [ 20, 15, 10, 5 ]
+console.log(getMultipleOf5(5, 5));  // Output: [ 5 ]
+console.log(getMultipleOf5(2, 4));  // Output: []
+
+
+
+// sum of Digits
+
+const sumOfDigits2 = str => {
+    return ((str.split("").filter(x => (x >= 1 && x <= 9)))).reduce((sum,val)=> sum += Number(val),0)
+}
+
+console.log(sumOfDigits2("John's age is 29"))
+
+// remove dublicates
+
+const removeDuplicates222 = arr =>{
+     arrNoDublicates = [];
+     arrAllDublicates = [];
+  for (i = 0; i < arr.length; i++){
+    if (arr.slice(i+1).includes(arr[i])) arrAllDublicates.push(arr[i])
+    else arrNoDublicates.push(arr[i])
+  }
+return arrNoDublicates
+
+}
+
+console.log(removeDuplicates222([10, 20, 35, 20, 35, 60, 70, 60]))   // [10, 20, 35, 60, 70] 
+
+
+const middleNumber2 = arr=>{
+return (arr.sort((n1,n2) => n1-n2))[1]
+}
+console.log(middleNumber2([1, 2, 2]))
+()
+const noVowel2 = str  =>(str.split("").filter(x => (!("AaIiOoEeUu".includes(x))))).join("")
+
+console.log(noVowel2("TechGlobal"))
+
+const middleInt4 = (n1, n2, n3) =>{
+    arr = [ n1, n2, n3]
+    return (arr.sort((a, b) => (a - b)))[1]
+}
+
+console.log(middleInt4(1, 3, 1))
+
+const firstLastWord3 = str =>{
+    arr = str.split(" ")
+    return arr[0] +arr[arr.length - 1]
+    }
+
+    console.log(firstLastWord3("I like JavaScript"))
+
+    const no3no5 = arr =>{
+      return arr.map(num =>{
+        if(num % 15 === 0) return num = 101
+        if(num % 5 === 0) return num = 99
+        if(num % 3 === 0) return num = 100
+        else return num
+        })
+        
+        }
+console.log(no3no5([3, 4, 5, 6]))        
+
+const countWords = str =>(str.trim().split(" "))
+
+console.log(countWords("   I like Java    Script    "))
+
+
+const count = arr =>{
+    let count = 0;
+    arr.forEach(x =>{
+     if (x.trim().includes(" ")) return count ++
+    })
+    return count
+    }
+
+    console.log(count(["g gg", "g g g", "   123"]))
