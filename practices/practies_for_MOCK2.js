@@ -158,6 +158,7 @@ const FirstDublicate = arr => {
 }
 
 console.log(FirstDublicate(["foo", 123, 'abc', "foo", "bar"]));
+console.log(FirstDublicate([ 123, "abc", "123", 3, "abc"]))
 
 // Task 20
 

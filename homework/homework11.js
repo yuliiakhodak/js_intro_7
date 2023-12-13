@@ -70,8 +70,8 @@ const canFormString = (str1, str2) => {
     return result
 
 }
-console.log(canFormString("programming", "gaming"))
 console.log(canFormString("Hello", "Hi"))
+console.log(canFormString("programming", "gaming"))
 console.log(canFormString("halogen", "hello"))
 console.log(canFormString("CONVERSATION", "voices rant on"))
 console.log(canFormString("12", "123"))
