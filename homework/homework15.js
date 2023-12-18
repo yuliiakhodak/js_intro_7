@@ -43,13 +43,28 @@ console.log(toSnakeCase("hello"))
 // Task 3
 
 const alternatingCases = str => {
-    let arr = str.split("")
     let newArr = []
+    if (str.includes(" ")) {
+        let arr = str.split(" ")
+        arr.forEach(word => {
+            let letters = word.split("")
+            for (let i = 0; i < letters.length; i++) {
+                if (i % 2 === 0) newArr.push(letters[i].toUpperCase())
+                else newArr.push(letters[i].toLowerCase())
+            }
+            newArr.push(" ")
+        })
 
-    for (let i = 0; i < arr.length; i++) {
-        if (i % 2 === 0) newArr.push(arr[i].toUpperCase())
-        else newArr.push(arr[i].toLowerCase())
     }
+    else {
+        let arr = str.split("")
+        for (let i = 0; i < arr.length; i++) {
+            if (i % 2 === 0) newArr.push(arr[i].toUpperCase())
+            else newArr.push(arr[i].toLowerCase())
+        }
+        newArr.push(" ")
+    }
+
     return newArr.join("")
 }
 
@@ -58,6 +73,8 @@ console.log(alternatingCases("basketball"))
 console.log(alternatingCases("123!@#aB"))
 console.log(alternatingCases(""))
 console.log(alternatingCases("Tech Global"))
+
+
 
 // Task 4
 
